@@ -1,0 +1,48 @@
+.imagen-worms {
+    height: 50px;
+    width: 300px;
+    align-content: center;
+}
+.container {
+    text-align: center;
+    background: red;
+    border: green 5px solid;
+}
+p {
+    font-weight: bold;
+}
+#barra {
+    background: blue;
+    width: 100%;
+    height: 10px;
+}
+.header1 {
+    border: black 3px solid;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.article1 {
+    border: green 3px solid;
+    text-align: center;
+    padding: 30px;
+    
+}
+.section1 {
+    border: red 3px solid;
+    background-color: silver;
+    width: 50%;
+    height: 100px;
+    margin: 30px;
+    
+    /*text-align: center;*/
+   /* padding-top: 5%;*/
+}
+.footer1 {
+    border: blue 3px solid;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+
+/*asdadadsd*/
