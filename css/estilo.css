@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
 .imagen-worms {
     height: 50px;
     width: 300px;
@@ -23,17 +28,20 @@ p {
     text-align: center;
 }
 .article1 {
+    overflow:auto; /*el borde se ajusta al contenido automaticamente*/
     border: green 3px solid;
     text-align: center;
     padding: 30px;
     
 }
 .section1 {
+    float: right;
     border: red 3px solid;
     background-color: silver;
-    width: 50%;
-    height: 100px;
-    margin: 30px;
+    width: 74%;
+    height: 120px;
+    margin: 5px;
+    /*clear:left;*/
     
     /*text-align: center;*/
    /* padding-top: 5%;*/
@@ -46,3 +54,11 @@ p {
 }
 
 /*asdadadsd*/
+
+nav {
+    float: left;
+    width: 25%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
