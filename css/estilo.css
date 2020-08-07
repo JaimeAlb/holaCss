@@ -23,7 +23,8 @@ p {
 }
 .header1 {
     float:left;
-    border: black 3px solid;
+    background-color: cadetblue;
+    opacity: ;
     width: 100%;
     height: 80px;
     display: flex;
@@ -37,18 +38,20 @@ p {
     height: 430px;
     float: left;
     width: 75%;
-    border: green 3px solid;
+    background-color: #dee8e9;
     text-align: center;
     padding: 10px;
     
 }
 .section1 {
  
-    border: red 3px solid;
     background-color: silver;
+    border-radius: 10px;
+    color: rgb(25, 77, 78);
     width: 90%;
     height: 120px;
-    margin: 0 auto;    
+    margin: 10px auto;    
+    padding: 10px;
     /*clear:left;*/
     
     /*text-align: center;*/
@@ -56,22 +59,28 @@ p {
 }
 .section2 {
  
-    border: red 3px solid;
+    border-radius: 10px;
     background-color: silver;
+    color: rgb(25, 77, 78);
     width: 90%;
-    height: 220px;
-    margin: 0 auto;    
+    height: 240px;
+    margin: 10px auto;    
+    padding: 10px;  
     /*clear:left;*/
     
     /*text-align: center;*/
    /* padding-top: 5%;*/
 }
 .footer1 {
-    border: blue 3px solid;
+    background-color: cadetblue;
+    color: ghostwhite;
     width: 100%;
     height: 130px;
     text-align: center;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*asdadadsd*/
@@ -79,14 +88,19 @@ p {
 nav {
     float: left;
     width: 25%;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 430px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
+    margin: 0 auto;
+    
   }
 
 .titulo1 {
-    color: steelblue;
-    font-size: large;
+    color: ghostwhite;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 2px;
     position: relative;
     width: 85%;
     text-align: center;
@@ -98,4 +112,27 @@ nav {
     text-align: center;
 
 
+}
+.boton1 {
+    background-color: rgb(156, 150, 150);
+    border-radius: 10px;
+    font-family: fantasy;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(227, 227, 238);
+    height: 50px;
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo1 {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 100px;
 }
