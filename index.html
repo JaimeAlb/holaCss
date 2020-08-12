@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header1">
-        <div class="logo1"><a href="index.html"><img src="logo.png" alt="Logo" style="max-width: 95%; display: flex; margin: 0 auto;"></a></div>
+        <div id="logo1" class="logo1"><a href="index.html"><img src="logo.png" alt="Logo" style="max-width: 95%; display: flex; margin: 0 auto;"></a></div>
         <div class="titulo1">ZAPATOS DE SEGURIDAD </div>        
     </header>
     <nav>        
@@ -36,22 +36,21 @@
     </article>
     <footer class="footer1"><p>Avenida Pedro Montt #2323, Santiago, Chile</p></footer>
 <script>
-
     var fecha = new Date();
     var hora = fecha.getHours();
     var minutos = fecha. getMinutes();
     console.log(fecha);
 
-    if(hora<12){
-        window.alert("La hora es: " + " " + hora + ":"+ minutos);
-        
+    if(hora>12){
+        window.alert("La hora es: " + " " + hora + ":"+ minutos);        
     }  
-
     function mifuncion() {
         console.log("aprete el boton");
         document.getElementById("parrafo").innerHTML="mentira!";
-    }
-
+    }    
+    // Cambia de color el fondo del logo
+    //logo1.addEventListener('mouseenter', () => document.querySelector('.logo1').style.backgroundColor = '#eeffaa');
+    //logo1.addEventListener('mouseleave', () => document.querySelector('.logo1').style.backgroundColor = '#5f9ea0');
 </script>
 </body>
 </html>

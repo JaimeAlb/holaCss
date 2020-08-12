@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
-  }
-  
-
+} 
 .imagen-worms {
     height: 50px;
     width: 300px;
@@ -29,9 +27,7 @@ p {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
-   
-    
+    justify-content: center;    
 }
 .article1 {
     /*overflow:auto; /*el borde se ajusta al contenido automaticamente*/
@@ -41,10 +37,8 @@ p {
     background-color: #dee8e9;
     text-align: center;
     padding: 10px;
-    
 }
-.section1 {
- 
+.section1 { 
     background-color: silver;
     border-radius: 10px;
     color: rgb(25, 77, 78);
@@ -52,13 +46,11 @@ p {
     height: 120px;
     margin: 10px auto;    
     padding: 10px;
-    /*clear:left;*/
-    
+    /*clear:left;*/    
     /*text-align: center;*/
    /* padding-top: 5%;*/
 }
-.section2 {
- 
+.section2 { 
     border-radius: 10px;
     background-color: silver;
     color: rgb(25, 77, 78);
@@ -66,8 +58,7 @@ p {
     height: 240px;
     margin: 10px auto;    
     padding: 10px;    
-    /*clear:left;*/
-    
+    /*clear:left;*/    
     /*text-align: center;*/
    /* padding-top: 5%;*/
 }
@@ -82,19 +73,15 @@ p {
     align-items: center;
     justify-content: center;
 }
-
 /*asdadadsd*/
-
 nav {
     float: left;
     width: 25%;
     height: 430px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
-    margin: 0 auto;
-    
-  }
-
+    margin: 0 auto;    
+}
 .titulo1 {
     color: ghostwhite;
     font-family: fantasy;
@@ -104,14 +91,10 @@ nav {
     position: relative;
     width: 85%;
     text-align: center;
-
 }
-.inicio1 {
-    
+.inicio1 {    
     width: 15%;
     text-align: center;
-
-
 }
 .boton1 {
     background-color: rgb(156, 150, 150);
@@ -127,8 +110,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 .logo1 {
     background-color: cadetblue;
@@ -136,8 +118,11 @@ nav {
     height: 80px;
     object-fit: cover;
     margin-left: 100px;
-    
 }
+
 .logo1:hover {
     background-color: yellow;
-  }
+}
+
+
+
