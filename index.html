@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/88c5c2c82f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js" integrity="sha512-qSnlnyh7EcD3vTqRoSP4LYsy2yVuqqmnkM9tW4dWo6xvAoxuVXyM36qZK54fyCmHoY1iKi9FJAUZrlPqmGNXFw==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header class="header1">
         <div id="logo1" class="logo1"><a href="index.html"><img src="logo.png" alt="Logo" style="max-width: 95%; display: flex; margin: 0 auto;"></a></div>
-        <div class="titulo1">ZAPATOS DE SEGURIDAD </div>        
+        <div class="titulo1">ZAPATOS DE SEGURIDAD </div>     
+        <button class="switch active" id="switch">
+            <span class="span1"><i class="fas fa-sun"></i></span>
+            <span class="span1"><i class="fas fa-moon"></i></span>
+        </button>   
     </header>
     <nav>        
             <a href="productos.html"><div class="boton1">PRODUCTOS</div></a>
@@ -41,7 +48,7 @@
     var minutos = fecha. getMinutes();
     console.log(fecha);
 
-    if(hora>12){
+    if(hora<12){
         window.alert("La hora es: " + " " + hora + ":"+ minutos);        
     }  
     function mifuncion() {
@@ -51,6 +58,22 @@
     // Cambia de color el fondo del logo
     //logo1.addEventListener('mouseenter', () => document.querySelector('.logo1').style.backgroundColor = '#eeffaa');
     //logo1.addEventListener('mouseleave', () => document.querySelector('.logo1').style.backgroundColor = '#5f9ea0');
+
+    const btnSwitch = document.querySelector('#switch');
+    btnSwitch.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        btnSwitch.classList.toggle('active');
+    });
+    // momentjs
+    moment.locale('es');
+    const hoy = moment();
+    const hora1 = hoy.format('H');
+
+    if( (hora1 > 20 && hora1 <= 24) || (hora1 >= 0 && hora1 < 8)){
+        document.body.classList.toggle('dark');
+        btnSwitch.classList.toggle('active');   
+    }  
+
 </script>
 </body>
 </html>
